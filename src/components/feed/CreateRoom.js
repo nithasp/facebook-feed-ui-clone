@@ -19,9 +19,9 @@ const CreateRoom = () => {
       </div>
       <div className="create-room-section2">
         {contactUsersCreateRoom.map((user) => {
-          const { id, thumbnail, user_name } = user;
+          const { id, thumbnail } = user;
           return (
-            <div className="contact-user">
+            <div className="contact-user" key={id}>
               <div className="wrap-thumbnail">
                 <img src={thumbnail} alt="thumbnail" className="thumbnail" />
               </div>

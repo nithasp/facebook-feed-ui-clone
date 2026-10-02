@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import styled, {ThemeContext} from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import {UseGlobalContext2} from '../context/GlobalContext';
 const DarkModeButton = () => {
 

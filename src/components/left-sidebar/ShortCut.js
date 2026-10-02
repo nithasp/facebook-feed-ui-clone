@@ -18,7 +18,7 @@ const ShortCut = () => {
         {shortcutData1.map((item, index) => {
           const { id, icon, shortcut_name } = item;
           return (
-            <div className="shortcut-item">
+            <div className="shortcut-item" key={id}>
               <div className="wrap-shortcut-item">
                 <div className="wrap-icon">
                   <img src={icon} className="icon" alt={shortcut_name} />
@@ -52,7 +52,7 @@ const ShortCut = () => {
         {shortcutData2.map((item, index) => {
           const { id, icon, shortcut_name } = item;
           return (
-            <div className="shortcut-item">
+            <div className="shortcut-item" key={id}>
               <div className="wrap-shortcut-item">
                 <div className="wrap-icon">
                   <img src={icon} className="icon" alt={shortcut_name} />

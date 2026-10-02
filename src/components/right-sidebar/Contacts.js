@@ -33,7 +33,7 @@ const Contacts = () => {
         {contactUsers.map((user) => {
           const { id, thumbnail, user_name } = user;
           return (
-            <div className="contact-user">
+            <div className="contact-user" key={id}>
               <div className="wrap-thumbnail">
                 <img src={thumbnail} alt="thumbnail" className="thumbnail" />
               </div>

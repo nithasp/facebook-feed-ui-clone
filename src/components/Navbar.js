@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import {UseGlobalContext2} from '../context/GlobalContext';
 
 const Navbar = () => {
-  const {mode} = UseGlobalContext2();
 
   const clickIconActive = () => {
     const icons = document.querySelectorAll(".navbar-section2 .icon");

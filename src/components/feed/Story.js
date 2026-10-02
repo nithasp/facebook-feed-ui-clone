@@ -29,7 +29,7 @@ const Story = () => {
         {storyData.map((item) => {
           const { id, story_image, user_thumbnail, user_name } = item;
           return (
-            <div className="friend-story item-story">
+            <div className="friend-story item-story" key={id}>
               <div className="wrap-thumbnail">
                 <img
                   src={user_thumbnail}
